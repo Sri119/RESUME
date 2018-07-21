@@ -14,6 +14,9 @@ var data = JSON.parse(text);
 console.log(data);
 basics(data.details);
 ch1(data.Career);
+ed(data.education);
+ks(data.keyskills);
+ach(data.achievements);
 })
 
 var child1=document.querySelector(".child1");
@@ -58,5 +61,87 @@ function ch1(inf) {
   var info=document.createElement("p");
   info.textContent=inf.info;
   child2.appendChild(info);
-
 }
+
+var child2=document.querySelector(".child2");
+function ed(edu) {
+
+  var educ=document.createElement("h2");
+  educ.textContent="Education Details:";
+  child2.appendChild(educ);
+
+  var hr=document.createElement("hr");
+  child2.appendChild(hr);
+  for(i=0;i<edu.length;i++)
+  {
+     var deg = document.createElement("h3");
+     deg.textContent = edu[i].degree;
+     child2.appendChild(deg);
+
+     var u1 = document.createElement("u1");
+     var li = document.createElement("li");
+     li.textContent= edu[i].institute;
+     u1.appendChild(li);
+     child2.appendChild(u1);
+
+     var li2=document.createElement("li");
+     li2.textContent=edu[i].date;
+     u1.appendChild(li2);
+     child2.appendChild(u1);
+}
+}
+
+var child2=document.querySelector(".child2");
+function ks(key) {
+
+  var k=document.createElement("h2");
+  k.textContent="Key-Skills:";
+  child2.appendChild(k);
+
+  var hr=document.createElement("hr");
+  child2.appendChild(hr);
+
+  var keys=document.createElement("table");
+  keys.border="1";
+  child2.appendChild(keys);
+
+  tabledata="";
+
+  for(i=0;i<key.length;i++)
+  {
+    tabledata+="<tr><td>"+key[i].title+"</td><td>"+key[i].info+"</td></tr>";
+  }
+  keys.innerHTML=tabledata;
+}
+
+var child2=document.querySelector(".child2");
+function ach(ment) {
+
+  var k=document.createElement("h2");
+  k.textContent="Achievements:";
+  child2.appendChild(k);
+
+  var hr=document.createElement("hr");
+  child2.appendChild(hr);
+
+  var am=document.createElement("table");
+  am.border="1";
+  child2.appendChild(am);
+
+  tabledata="";
+
+  for(i=0;i<ment.length;i++)
+  {
+    tabledata+="<tr><td>"+ment[i].title+"</td><td>"+ment[i].info+"</td></tr>";
+  }
+  am.innerHTML=tabledata;
+}
+     // var k = document.createElement("h3");
+     // k.textContent = keys[i].title;
+     // child2.appendChild(k);
+     //
+     // var u1 = document.createElement("u1");
+     // var li = document.createElement("li");
+     // li.textContent= keys[i].info;
+     // u1.appendChild(li);
+     // child2.appendChild(u1);

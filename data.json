@@ -7,6 +7,46 @@
 "address" :"SRKR ENGINEERING COLLEGE"
 },
 "Career":{
-  "info":"To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization"}
-  
+  "info":"To pursue a challenging career and be a part of progressive organization that gives a scope to enhance my knowledge and utilizing my skills towards the growth of the organization"
+},
+"education":[{
+  "degree":"Btech",
+  "institute":"SRKR",
+  "date":["2017-2020","89.69%"]},
+  {
+    "degree":"Diploma",
+    "institute":"Aditya",
+    "date":["2014-2017","91%"]},
+    {
+      "degree":"SSC",
+      "institute":"Z.P.P",
+      "date":["2013-2014","85%"]}
+],
+
+"keyskills":[{
+  "title":"Programming Languages",
+  "info":["c","c++","java","python","oracle"]
+},
+{
+  "title":"Operating Systems",
+  "info":["windows","linux","mac","ubuntu","dos"]
+},
+{
+  "title":"Databases",
+  "info":["oracle","sql","mysql"]
+}
+],
+"achievements":[{
+  "title":"LAPTOP",
+  "info":"i got a free lapi in google wepage"
+},
+{
+"title":"BIKE",
+"info":"i got a MANI BIKE in SRKR"
+},
+{
+"title":"MONEY",
+"info":"i TAKE total money of SRKR"
+}
+]
 }
