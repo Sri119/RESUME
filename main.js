@@ -1,16 +1,15 @@
-function Loadjson(file) {
-  var xml= new  XMLHttpRequest();
-  xml.overrideMime Type("application/json");
-  xml.open("GET",file,true);
-  xml.onreadystatechange=function(){
-    if(xml.readyState===4 && xml.status == "200"){
-      callback(xml.responseText);
+function Loadjson(file,callback) {
+  var x = new XMLHttpRequest();
+  x.overrideMimeType("application/json");
+  x.open("GET",file,true);
+  x.onreadystatechange=function(){
+    if(x.readyState===4 && x.status == "200"){
+      callback(x.responseText);
     }
   };
-  xml.send(null);
+  x.send(null);
 }
 Loadjson("data.json",function(text){
 var data = JSON.parse(text);
 console.log(data);
-
 })
