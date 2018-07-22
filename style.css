@@ -66,6 +66,7 @@ img{
   padding: 3%;
   margin: 3%;
   width: 85%;
+  table-layout: inherit;
   text-align: center;
   color: #67020B;
   border-radius: 10%;
@@ -75,7 +76,7 @@ img{
 @media only screen and (min-width:481px) and (max-width:768px)
 {
 .parent{
-  border: 2px solid blue;
+  border:2px solid blue;
 }
 h3,h2,p,a{
   word-wrap: break-word;
@@ -86,33 +87,35 @@ h3,h2,p,a{
 }
 .child1{
   background-color:#ADF390;
-  border: 3px solid skyblue;
-  padding: 3%;
-  margin: 3%;
-  width: 50%;
+  border:3px solid skyblue;
+  padding:3%;
+  margin:1%;
+  width:50%;
   text-align: left;
-  font-size:18px;
-  color: #FB9503;
-  border-radius: 10%;
+  font-size: 10px;
+  color:#FB9503;
+  border-radius:10%;
 }
 img{
   border-radius: 50%;
-  border: 2px solid blue;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 8px 12px 18px darkviolet;
+  border:1px solid blue;
+  display:block;
+  width=100%;
+  margin-left:auto;
+  margin-right:auto;
+  box-shadow:4px 6px 8px darkviolet;
 }
 .child2{
   background-color:#77ECAF;
-  border: 3px solid red;
-  padding: 3%;
-  margin: 3%;
-  width: 50%;
-  text-align: left;
-    font-size:18px;
-      color: #54181D;
-  border-radius: 10%;
+  border:3px solid red;
+  padding:1%;
+  margin:2%;
+  width:50%;
+  text-align:left;
+  table-layout:inherit;
+    font-size: 10px;
+    color: #54181D;
+  border-radius:5%;
 }
 }
 @media only screen and (min-width:769px) and (max-width:1024px)
@@ -129,32 +132,33 @@ h3,h2,p,a{
 }
 .child1{
   background-color:#79ACCA;
-  border: 3px solid skyblue;
+  border:3px solid skyblue;
   padding: 3%;
   margin: 3%;
   width: 50%;
   text-align: right;
-  font-size:32px;
+  font-size:14px;
   color: #068D0E;
-  border-radius: 10%;
+  border-radius 10%;
 }
 img{
-  border-radius: 50%;
-  border: 2px solid blue;
+  border-radius:50%;
+  border:2px solid blue;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left:auto;
+  margin-right:auto;
   box-shadow: 8px 12px 18px darkviolet;
 }
 .child2{
   background-color:#797CCA;
   border: 3px solid red;
-  padding: 3%;
-  margin: 3%;
-  width: 50%;
-  text-align: right;
-  font-size:32px;
+  padding:3%;
+  margin:3%;
+  width:50%;
+  table-layout:inherit;
+  text-align:right;
+  font-size:14px;
   color: #E1F50F;
-  border-radius: 10%;
+  border-radius:10%;
 }
 }
