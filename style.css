@@ -90,7 +90,7 @@ h3,h2,p,a{
   border:3px solid skyblue;
   padding:3%;
   margin:1%;
-  width:50%;
+  width:55%;
   text-align: left;
   font-size: 10px;
   color:#FB9503;
@@ -110,10 +110,10 @@ img{
   border:3px solid red;
   padding:1%;
   margin:2%;
-  width:50%;
+  width:36%;
   text-align:left;
-  table-layout:inherit;
-    font-size: 10px;
+  table-layout:auto;
+    font-size: 6px;
     color: #54181D;
   border-radius:5%;
 }
